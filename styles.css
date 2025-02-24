@@ -15,11 +15,32 @@
     font-family: 'Roboto', cursive;
 }
 
+::-webkit-scrollbar {
+    width: 4px;
+    border: 1px solid #d5d5d5;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0;
+    background: var(--fourth-color);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border-radius: 0;
+    background: var(--second-color);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: red;
+    border-radius: 1px;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
     background-color: var(--third-color);
     color: var(--third-color);
     width: 100%;
@@ -51,6 +72,7 @@ button:hover {
     border-radius: 20px;
     height: auto;
     min-height: 500px;
+    max-height: 1000px;
     width: 100%;
     max-width: 800px;
     min-width: 400px;
@@ -62,6 +84,7 @@ button:hover {
     box-shadow: 10px 10px 50px var(--main-color);
     margin-left: 20px;
     margin-right: 20px;
+    transition: all 0.3s ease;
 }
 
 /* Title Section */
@@ -137,6 +160,18 @@ li {
     border: 2px solid black;
     border-radius: 20px;
     padding: 15px;
+    background-color: var(--third-color);
+    color: var(--fifth-color);
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 20px var(--main-color);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+li:hover {
+    scale: 1.01;
 }
 
 .checkbox {
